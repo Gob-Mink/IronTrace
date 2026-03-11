@@ -1,7 +1,7 @@
 # Blue Team SOC Analysis — LFI Exploitation & SSH Compromise
 
 > **Capstone Project | IronHack Cybersecurity Bootcamp — January 2026**  
-> **Analyst:** Red Wolf  
+> **Analyst:** Bulwark  
 > **Platform:** TryHackMe (Private Room — Final Scenario)  
 > **SIEM:** Splunk  
 > **Classification:** Educational / Portfolio
@@ -211,4 +211,4 @@ This investigation was completed as the final capstone scenario for the **IronHa
 
 ---
 
-*Red Wolf | IronHack Cybersecurity Bootcamp — January 2026*
+*Bulwark | IronHack Cybersecurity Bootcamp — January 2026*
