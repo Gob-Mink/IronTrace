@@ -73,7 +73,7 @@ Using the username `ironhawk` harvested from `/etc/passwd`, the attacker pivoted
 | Failed SSH login attempts | 195 |
 | Confirmed SSH session | 1 |
 | Compromised username | `ironhawk` |
-| SSH Process ID (PID) | `51262` |
+| SSH Process ID (PID) | `51362` |
 | Authentication method | PAM unix — password accepted |
 
 The SSH session was opened and subsequently closed, confirmed via Auth Log correlation with the same source IP.
@@ -104,7 +104,7 @@ SSH Brute Force (192.168.178.83)
         │
         └── SSH session established
                 ├── User: ironhawk
-                ├── PID: 51262
+                ├── PID: 51362
                 ├── Auth: PAM unix — password accepted
                 ├── Session: opened
                 └── Session: closed
