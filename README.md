@@ -59,20 +59,20 @@ Through the LFI vulnerability, the attacker successfully read 97 files from the 
 
 | File | Significance |
 |------|-------------|
-| `/etc/passwd` | Exposed system usernames — `ironhawk` identified |
+| `/etc/passwd` | Exposed system usernames — `ironhack` identified |
 | `/etc/ssh/sshd_config` | SSH server configuration exposed |
 | `/etc/ssh/ssh_config` | SSH client configuration exposed |
 | `/etc/ssh/ssh_host_dsa_key.pub` | SSH host public key harvested |
 
 ### Phase 2 — SSH Compromise
 
-Using the username `ironhawk` harvested from `/etc/passwd`, the attacker pivoted to a direct SSH attack against the server.
+Using the username `ironhack` harvested from `/etc/passwd`, the attacker pivoted to a direct SSH attack against the server.
 
 | Metric | Value |
 |--------|-------|
 | Failed SSH login attempts | 195 |
 | Confirmed SSH session | 1 |
-| Compromised username | `ironhawk` |
+| Compromised username | `ironhack` |
 | SSH Process ID (PID) | `51362` |
 | Authentication method | PAM unix — password accepted |
 
@@ -91,7 +91,7 @@ FFUF Web Fuzzer (192.168.178.83)
         │
         └── 97 successful LFI reads (HTTP 200)
                 │
-                ├── /etc/passwd ──────────────── username "ironhawk" harvested
+                ├── /etc/passwd ──────────────── username "ironhack" harvested
                 ├── /etc/ssh/sshd_config ──────── SSH server config exposed
                 ├── /etc/ssh/ssh_config ───────── SSH client config exposed
                 └── /etc/ssh/ssh_host_dsa_key.pub SSH host key harvested
@@ -103,7 +103,7 @@ SSH Brute Force (192.168.178.83)
         ├── 195 failed SSH login attempts
         │
         └── SSH session established
-                ├── User: ironhawk
+                ├── User: ironhack
                 ├── PID: 51362
                 ├── Auth: PAM unix — password accepted
                 ├── Session: opened
